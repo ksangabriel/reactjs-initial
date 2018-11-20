@@ -9,7 +9,9 @@ class App extends React.Component {
     {
         return (<div>
             <Header appname={"ReactJSDemo"}/>
-            <Home name={1}/>
+            <Home name={"Karl"} age={30}>
+                <div>{"THIS"}</div>
+            </Home>
             </div>); 
     }
 }
