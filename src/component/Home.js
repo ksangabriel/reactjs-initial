@@ -9,7 +9,8 @@ export class Home extends React.Component
         super();
         this.age = props.age;
         this.state = {
-            age_state: props.age
+            age_state: props.age,
+            status: 0
         };
     }
 
@@ -21,6 +22,7 @@ export class Home extends React.Component
         //## not be re-rendered to display the new value
         // this.state.age_state = this.state.age_state + 1;
 
+        // this.state.status will remain 0
         this.setState({age_state: this.state.age_state + 1});
     }
 
@@ -32,6 +34,7 @@ export class Home extends React.Component
                 <p>Your age is {this.props.age}</p>
                 <p>Your new age is {this.age}</p>
                 <p>Your new STATE age is {this.state.age_state}</p>
+                <p>Your STATE status is {this.state.status}</p>
                 <button 
                     onClick={this.incrementAge.bind(this)} 
                     className="btn btn-primary">Click me!</button>
