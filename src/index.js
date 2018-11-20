@@ -9,7 +9,7 @@ class App extends React.Component {
     {
         return (<div>
             <Header appname={"ReactJSDemo"}/>
-            <Home name={"Karl San Gabriel"}/>
+            <Home name={1}/>
             </div>); 
     }
 }
